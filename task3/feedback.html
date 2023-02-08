@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="watch.css" />
+  <title>Watchy Watch </title>
+
+  <style>
+    input[type=text] {
+			width: 100%;
+			padding: 10px 0;
+			background: none;
+			border: none;
+			border-bottom: 1px solid #666;
+			color: black;
+			font-size: 14px;
+			text-transform: uppercase;
+			outline: none;
+			transition: border-color .2s;
+
+		}
+
+		input[type=text]::placeholder {
+			color: #666;
+		}
+
+		input[type=text]:focus {
+			border-bottom-color: #ddd;
+		}
+
+		input[type=email] {
+			width: 100%;
+			padding: 10px 0;
+			background: none;
+			border: none;
+			border-bottom: 1px solid #666;
+			color: black;
+			font-size: 14px;
+			outline: none;
+			transition: border-color .2s;
+		}
+
+
+		input[type=email]::placeholder {
+			color: #666;
+		}
+
+		input[type=email]:focus {
+			border-bottom-color: #ddd;
+		}
+
+		
+
+		/*Buttons*/
+		input[type=submit],
+		input[type=reset] {
+			background-color: #666 ;
+			border: none;
+			color: white;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover{
+			color: black;
+
+		}
+		input[type=reset]:hover {
+			color: black;
+			
+		}
+
+
+		input[type=date] {
+			border: 1px solid #6078EA;
+			background-color: #6078EA;
+			border-radius: 7px;
+			padding: 4px 8px;
+
+		}
+
+		input[type=file] {
+			border: 1px solid #666;
+			background-color: #666;
+			border-radius: 7px;
+			padding: 5px;
+		}
+		input[type=number] {
+			border: 1px solid #666;
+			background-color: #666;
+			border-radius: 7px;
+			padding: 5px;
+			color: black;
+			outline: none;
+		}
+
+
+
+
+		#table1 {
+			border-radius: 25px;
+        background: whitesmoke;
+        padding: 20px;
+        width: 1000px;
+        height: 500px;
+		}
+
+		#table2 {
+			background: whitesmoke;
+			padding: 20px;
+			border: 1px solid #3e3e3e ;
+			border-collapse: collapse;
+			border-radius: 17px;
+			
+		}
+
+		td {
+			padding: 20px;
+		}
+
+		#c1 {
+
+			color: black;
+		}
+
+		#title {
+			text-align: center;
+            color: black;
+            border-bottom: 3px solid black;
+		}
+
+		#dropdown {
+			background-color: #6078EA;
+			color:black;
+			border-radius: 7px;
+			padding: 8px;
+			width: 200px;
+			border: none;
+			font-size: 15px;
+			-webkit-appearance: button;
+			appearance: button;
+			outline: none;
+		}
+
+        textarea {
+        width: 100%;
+        padding: 10px 0;
+        background: none;
+        border: none;
+        border: 1px solid #666;
+        color: black;
+        font-size: 14px;
+        outline: none;
+        transition: border-color .2s;
+    }
+    textarea:focus {
+        border-color: #ddd;
+    }
+
+.section{
+
+    padding:0;
+
+}
+  </style>
+</head>
+
+<body>
+  
+ <header class="header">
+  <nav>
+    <img src="08b4b3e39c954c238502505af8263b3c.png"  class="logob">
+    <ul>
+        <li><a href="watch.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="">FEEDBACK</a></li>
+    </ul>
+    </nav>
+    <div class="h">
+        <h1><span> Feedback Form</span></h1>
+    </div>
+ </header>
+
+ <section class="section">
+    <div class="introabout">
+        <h3>
+        <center>
+
+            <form action="mailto:dineshbabu0403@gmail.com" method="POST">
+                <table id="table1" bgcolor="white">
+                    <tr>
+                        <td colspan="3">
+                            <h1 id='title'>SURVEY FORM</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>FIRST NAME:</td>
+                        <td><input type="text" name="fname" placeholder="First Name">(max 30 character a-z or A-Z)</td>
+    
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>LAST NAME:</td>
+                        <td><input type="text" name="lname" placeholder="Last Name">(max 30 character a-z or A-Z)</td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>DATE OF BIRTH:</td>
+                        <td><input type="date" name="date" min="01-04-1998" max="01-04-2020"></td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>EMAIL ID:</td>
+                        <td><input type="email" name="Email_ID" placeholder=EMAIL></td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>MOBILE NUMBER:</td>
+                        <td><input type="text" name="phone_no" placeholder="10 digits number"></td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>GENDER:</td>
+                        <td style="color: black;"><input type="radio" name="gender" value="male"> MALE
+                            <input type="radio" name="gender" value="Female"> FEMALE
+                            <input type="radio" name="gender" value="others"> OTHERS</td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>CITY:</td>
+                        <td><input type="text" name="city"></td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>PIN CODE:</td>
+                        <td><input type="text" name="pin_code"></td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>STATE:</td>
+                        <td><select id="dropdown" name="state">
+                                <option>Coimbatore</option>
+                                <option>Chennai</option>
+                                <option>Bangalore</option>
+                                <option>Calicut</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>COUNTRY</td>
+                        <td><input type="text" name="country" value="India" readonly="readonly"></td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>QUALITY OF THE SERVICE:</td>
+                        <td><input type="radio" name="service" value="excellent"> Excellent <br>
+                            <input type="radio" name="service" value="moderate"> moderate<br>
+                            <input type="radio" name="service" value="good"> Good<br>
+                            <input type="radio" name="service" value="bad"> Bad</td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>RECOMMEND TO OTHERS:</td>
+                        <td><input type="radio" name="recommend" value="definitely"> Definitely <br>
+                            <input type="radio" name="recommend" value="probably"> Probably<br>
+                            <input type="radio" name="recommend" value="no"> Not at all<br>
+                    </tr>
+
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>OVERALL SATISFACTION:</td>
+                        <td><input type="radio" name="Satisfaction" value="verysatisfied"> Very Satisfied <br>
+                            <input type="radio" name="Satisfaction" value="satisfied"> Satisfied<br>
+                            <input type="radio" name="Satisfaction" value="neutral"> Neutral<br>
+                            <input type="radio" name="Satisfaction" value="dissatisfied"> Dissatisfied</td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>YOUR EXPERIENCE:</td>
+                        <td><textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="width:12px;"> </td>
+                        <td id='c1'>HOW CAN WE IMPROVE?:</td>
+                        <td><textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea></td>
+                    </tr>
+                    
+                </table><br>
+                
+                    <div style="text-align: center;">
+                        <button class="btn1" type="submit">SUBMIT</button>
+                        <br>
+                        <br>
+                    </div>
+                
+    
+            </form>
+        </h3>
+    </div>
+  </section>
+  
+ <section id="footer">
+            
+    <div class="foot">
+        <ul>
+            <li><a href="watch.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="">FEEDBACK</a></li>
+
+        </ul>
+
+        <div class="social-links">
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+    </div>
+</section>
+
+</body>
+</html>
