@@ -1,0 +1,98 @@
+body{
+    align-items: center;
+    margin: auto;
+    width: 35%;
+    height: 100%;
+    cursor:default;
+    background-color: #7743DB;
+    background-size: cover;
+
+}
+.img{
+  padding: 5%;
+  text-align: center;
+}
+img{
+  border-radius: 7px;
+
+}
+.card {
+    margin: 10%;
+    height: 750px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+    animation: slideIn 1s ease-in-out;
+    background-image:url("https://cdn.pixabay.com/photo/2019/04/21/21/32/nature-4145029__340.jpg"); 
+  }
+  
+  .card-header {
+    color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: conTent 2.5s ease-in-out;
+  }
+  
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  .content p{
+    font-size: 165%;
+    font-family: monotype corsiva;
+  }
+  h1,p {
+
+    font-weight: 1500;
+  }
+  
+  .footer {
+    color: black;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: slideIn 2.5s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes conTent {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
